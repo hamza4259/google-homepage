@@ -1,0 +1,1 @@
+Added most of the elements to the google html page
