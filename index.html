@@ -1,66 +1,62 @@
+/* Author: Hamza Ali
+Date: 1/3/20
+Project: Google homepage using HTML/CSS
+*/
+
+<!DOCTYPE html>
 <html>
-    <style>
-        .logo-placement {
-            position: absolute;
-            top: 300px;
-            left: 600px;
-        }
-        .search-placement {
-            position: absolute;
-            top: 425px;
-            right: 520px; <!--775 and 630-->
-        }
-        .button-placement {
-            position: absolute;
-            top: 475px;
-            right: 725px;
-        }
-        .lucky {
-            position: absolute;
-            top: 475px;
-            right: 590px;
-        }
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        input {
-            width: 400px;
-            height: 20px;
-        }
-        footer {
-            position: absolute;
-            bottom: 65px;
-            left: 650px;
-        }
-    </style>
-<head> 
-    <title>Google Clone</title>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title> Hamza Google-homepage</title>
 </head>
 
 <body>
-    <h1> </h1>
-    <a target="_blank" href = "">About</a>
-    <a>
-    <a target="_blank" href = "">Store</a>
-    <a>
-        <img class = logo-placement alt = "google logo image" 
-        src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    </a>
-    <div>
-        <button class = button-placement type = "submit">Google Search</button>
-        <button class = lucky type = "submit">I'm Feeling Lucky</button>
+    <div class="flex">
+        <header>
+            <nav class="nav">
+                <ul class="leftalign">
+                    <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                    <li><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+                </ul>
+                <ul class="rightalign">
+                    <li><a href="https://www.google.com/gmail/">Gmail</a></li>
+                    <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+                    <li><a id="none" href="https://www.google.com/intl/en/about/products?tab=wh" title="apps" class="material-icons">apps</aid="none"></li>
+                    <li><a href="https://web.archive.org/web/20191130031533/http://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"></a>
+                        <button class="signin">Sign In</button></li>                    
+                </ul>
+            </nav>
+        </header>
+
+
+     <main class="center"> 
+        <img class="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo"> 
+     </main>
+
+     <form>
+        <input  type="text" id="icons">
+        <button type="button" class="micbutton"></button>
+        <button type="button" class="magbutton"></button>
+     </form> 
+
+    <ul class="center">
+        <li><button class="searchbutton">Google Search</button></li>
+        <li><button class="searchbutton">I'm Feeling Lucky</button></li>
+    </ul> 
+    
+
+        <footer>
+            <ul class="footerright">
+                <li><a class="grey" href="https://web.archive.org/web/20191130234759/https://policies.google.com/privacy?fg=1">Privacy</a></li>
+                <li><a class="grey" href="https://web.archive.org/web/20191130234759/https://policies.google.com/terms?fg=1">Terms</a></li>
+                <li><a class="grey" href="https://web.archive.org/web/20191130234759/https://www.google.com/preferences?hl=en">Settings</a></li>
+            </ul>
+        </footer>
+
     </div>
-    <div>
-        <input class = "search-placement" type="text" placeholder="Search...">
-    </div>
-    <footer>
-        <a target="_blank" href = "">Privacy</a>
-        <a target="_blank" href = "">Terms</a>
-        <a target="_blank" href = "">Settings</a>
-    </footer>
 </body>
 </html>

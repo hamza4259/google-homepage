@@ -1,1 +1,1 @@
-Added most of the elements to the google html page
+This project attempts to clone the basic layout of the google search engine using HTML/CSS.
